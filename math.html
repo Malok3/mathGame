@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+   
+    <title>Document</title>
+    <script type="text/javascript" src="./script.js" defer></script>
+</head>
+<body id="body" class="bg1">
+    <form class="table" onsubmit="return false;">
+        <div id="thumbsUp" class="hidden"><span class="customFont lvlUptext">Level UP!</span><img src="./media/thumbs.gif"></div>
+        <div class="scoreBanner">
+            <span id="points" class="strong-tilt-move-shake white" data-shake="0">Points: <span id="score"></span></span>
+            <div class="levelPatch customFont">
+                <span>Level <span id="lvlNumber">1</span></span>
+            </div>
+        </div>
+
+        <div class="operation white customFont" id="confetti">
+            <div class="numberCase" id="number1"></div>
+            x <div class="numberCase" id="number2"></div> =
+            <input type="text" id="userResult" class="white customFont">
+
+        </div>
+        <button onclick="checkResult()" id="submitButton" class="submitButton hidden">Valider</button>
+        </div>
+        <div class="bottom-els" >
+            <div class="jauge" id="jauge" data-points="0">
+            
+                <div class="point1">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point2">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point3">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point4">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point5">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point6">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point7">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point8">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point9">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+                <div class="point10">
+                    <img class="empty" src="./media/points_empty.png">
+                    <img class="full" src="./media/points_full.png">
+                </div>
+            
+            </div>
+            <div class="rewardBanner" id="rewardBanner" data-points="0">    
+                <img src="./media/egg.png" class="constant-tilt-shake ">
+                <img src="./media/bacon.png" class="constant-tilt-shake ">
+                <img src="./media/milk.png" class="constant-tilt-shake">
+                <img src="./media/tartine.png" class="constant-tilt-shake ">
+                <img src="./media/gauffre.png" class="constant-tilt-shake ">
+                <img src="./media/cafe.png" class="constant-tilt-shake">
+                <img src="./media/pomme.png" class="constant-tilt-shake ">
+                <img src="./media/tartine2.png" class="constant-tilt-shake ">
+                <img src="./media/milk2.png" class="constant-tilt-shake ">
+                <img src="./media/crepe.png" class="constant-tilt-shake ">
+                <img src="./media/egg2.png" class="constant-tilt-shake ">
+                <img src="./media/fraise.png" class="constant-tilt-shake ">
+            </div>
+        </div>
+    </form>
+<div class="bestScore hidden">
+    <h2>Meilleur Score</h2>
+    <hr>
+    <ol>
+        <li><span>Name</span><span>100</span></li>
+        <li><span>Name</span><span>100</span></li>
+        <li><span>Name</span><span>100</span></li>
+        <li><span>Name</span><span>100</span></li>
+    </ol>
+</div>
+
+
+</body>
+</html>
